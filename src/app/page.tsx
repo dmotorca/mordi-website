@@ -7,6 +7,7 @@ export default function Home() {
           autoPlay
           loop
           muted
+          playsInline
         >
           <source src="/stock-images-videos/coffeebeans.mp4" type="video/mp4" />
         </video>
