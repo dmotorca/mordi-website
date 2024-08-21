@@ -2,16 +2,16 @@ import React from 'react';
 
 const AbebaTransportPage = () => {
   return (
-    <div>
-      Abeba Transport stands as a pioneering leader in Ethiopia's transport
-      sector and a key importer of heavy-duty trucks. With a robust fleet of
-      over 100 freight trucks and 50 fuel transport vehicles, we are committed
-      to delivering reliable and efficient transportation services across the
-      nation.
+    <>
+      Abeba Transport stands as a pioneering leader in Ethiopia&rsquo;s
+      transport sector and a key importer of heavy-duty trucks. With a robust
+      fleet of over 100 freight trucks and 50 fuel transport vehicles, we are
+      committed to delivering reliable and efficient transportation services
+      across the nation.
       <br></br>
-      Abeba Transport is a trailblazing leader in Ethiopia's transport sector
-      and a prominent importer of heavy trucks. With a fleet of over 100 freight
-      trucks and 50 fuel transport vehicles, we proudly serve major
+      Abeba Transport is a trailblazing leader in Ethiopia&rsquo;s transport
+      sector and a prominent importer of heavy trucks. With a fleet of over 100
+      freight trucks and 50 fuel transport vehicles, we proudly serve major
       organizations such as TOTAL Ethiopia and the World Food Programme (WFP),
       ensuring reliable and efficient transport solutions across the country.
       Fuel Transport Services Our fleet of over 50 fuel transport trucks is
@@ -24,7 +24,7 @@ const AbebaTransportPage = () => {
       Import Looking to purchase heavy trucks? Contact us today. With extensive
       experience in importing top brands like MAZ, MAN, Sino, and more, we’re
       your trusted partner for quality trucks.
-    </div>
+    </>
   );
 };
 
