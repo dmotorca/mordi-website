@@ -1,12 +1,14 @@
 'use client';
 
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
-import { usePathname } from 'next/navigation';
-import { motion, useCycle } from 'framer-motion';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 import { SIDENAV_ITEMS } from '@/constants';
 import { SideNavItem } from '@/types';
 import { Icon } from '@iconify/react';
+import { motion, useCycle } from 'framer-motion';
 
 type MenuItemWithSubMenuProps = {
   item: SideNavItem;
@@ -37,36 +39,14 @@ const HeaderMobile = () => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
   const [isOpen, toggleOpen] = useCycle(false, true);
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY && window.scrollY > 50) {
-        // User is scrolling down and passed 50px
-        setIsVisible(false);
-      } else {
-        // User is scrolling up
-        setIsVisible(true);
-      }
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <motion.nav
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
-      className={`fixed inset-0 z-50 w-full md:hidden transition-transform duration-300 ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
+      className={`fixed inset-0 z-50 w-full md:hidden ${
+        isOpen ? '' : 'pointer-events-none'
       }`}
       ref={containerRef}
     >
@@ -100,7 +80,7 @@ const HeaderMobile = () => {
               )}
 
               {!isLastItem && (
-                <MenuItem className="my-3 h-px w-full bg-gray-300 " />
+                <MenuItem className="my-3 h-px w-full  bg-gray-300 " />
               )}
             </div>
           );
@@ -231,7 +211,7 @@ const MenuItemVariants = {
     opacity: 0,
     transition: {
       y: { stiffness: 1000 },
-      duration: 0.3, // Closing animation duration
+      duration: 0.3, //Closing animation duration
     },
   },
 };
