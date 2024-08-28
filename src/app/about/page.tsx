@@ -5,22 +5,22 @@ const AboutPage = () => {
   return (
     <>
       <VideoPlayer src="/stock-images-videos/ethiopia_stock.mp4">
-        <h2 className="text-4xl font-bold lg:text-6xl">Mission</h2>
-        <p className="w-full h-64 lg:text-2xl">
+        <h2 className="text-3xl font-bold lg:text-6xl">Mission</h2>
+        <p className="w-full h-48 lg:text-2xl leading-snug lg:h-28">
           Help bridge the gap between a vision and a finished goal by providing
           products and services that deliver significant value, driving us to
           become one of the top 10 business organizations in Ethiopia by 2032.
         </p>
 
-        <h2 className="text-4xl font-bold">Vision</h2>
-        <p className="w-full h-64">
+        <h2 className="text-3xl font-bold lg:text-6xl">Vision</h2>
+        <p className="w-full h-44 leading-snug lg:text-2xl lg:h-28">
           To fulfill the national purpose of increasing wealth by providing
           quality and competitive products and services in the agricultural,
           transportation, manufacturing and commercial sectors.
         </p>
 
-        <h2 className="text-4xl font-bold">Values</h2>
-        <p className="w-full h-64">
+        <h2 className="text-3xl font-bold lg:text-6xl">Values</h2>
+        <p className="w-full h-44 leading-snug lg:text-2xl lg:h-56">
           Commitment to Quality
           <br></br>
           Integrity and Transparency
@@ -34,14 +34,15 @@ const AboutPage = () => {
           Social Responsibility
         </p>
 
-        <h2 className="text-4xl font-bold">Products and Distribution</h2>
-        <p className="w-full text-sm h-64">
-          <br></br>
-          West Lake Tyres (Exclusive Dealer for Ethiopia and Djibouti)
+        <h2 className="text-3xl font-bold lg:text-6xl">
+          Products and Distribution
+        </h2>
+        <p className="w-full h-44 leading-snug lg:text-2xl lg:h-60">
+          West Lake Tyres
           <br></br>
           Maz Trucks and Dump trucks
           <br></br>
-          LADA Automobiles (Exclusive Dealer for Ethiopia and Djibouti)
+          LADA Automobiles
           <br></br>
           Tractors
           <br></br>
@@ -51,9 +52,7 @@ const AboutPage = () => {
           <br></br>
           Batteries
           <br></br>
-          Batteries
-          <br></br>
-          Spare parts
+          Spare Parts
         </p>
       </VideoPlayer>
     </>
