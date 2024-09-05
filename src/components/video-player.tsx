@@ -7,7 +7,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ children, src }) => {
   return (
-    <div className="relative w-full h-full lg:h-auto lg:w-auto">
+    <div className="relative w-full h-full lg:h-[70rem] lg:w-auto">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover lg:object-cover"
         autoPlay

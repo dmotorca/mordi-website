@@ -13,7 +13,7 @@ const AboutPage = () => {
         </p>
 
         <h2 className="text-3xl font-bold lg:text-6xl">Vision</h2>
-        <p className="w-full h-44 leading-snug lg:text-2xl lg:h-28">
+        <p className="w-full h-44 leading-snug lg:text-2xl lg:h-24">
           To fulfill the national purpose of increasing wealth by providing
           quality and competitive products and services in the agricultural,
           transportation, manufacturing and commercial sectors.

@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import { SIDENAV_ITEMS } from '@/constants';
 import { SideNavItem } from '@/types';
 import { Icon } from '@iconify/react';
+import { Home } from 'lucide-react';
 
 const SideNav = () => {
   return (
@@ -15,10 +16,12 @@ const SideNav = () => {
       <div className="flex flex-col space-y-6 w-full">
         <Link
           href="/"
-          className="flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-zinc-200 h-11 w-full"
+          className="flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-zinc-200 h-[2.65rem] w-full"
         >
-          <span className="h-7 w-7 bg-indigo-500 rounded-lg" />
-          <span className="font-bold text-xl hidden md:flex">Logo</span>
+          <span className="h-7 w-7 rounded-lg">
+            <Home className="h-7" /> {/*This is where the logo is*/}
+          </span>
+          <span className="font-bold text-xl flex">AbebaGroup</span>
         </Link>
 
         <div className="flex flex-col space-y-2  md:px-6 ">
