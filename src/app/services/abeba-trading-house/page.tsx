@@ -24,8 +24,8 @@ const AbebaTradingPage = () => {
       Sheets** for building materials - **Agrochemicals** for agricultural
       productivity We take pride in providing top-quality products that meet the
       diverse needs of our clients, reinforcing our position as a leader in
-      Ethiopia&rsquo;s commercial landscape.
-      Videohttps://www.youtube.com/watch?v=IRtmozSyfjk
+      Ethiopia&rsquo;s commercial landscape. Video
+      https://www.youtube.com/watch?v=IRtmozSyfjk
     </>
   );
 };
