@@ -19,16 +19,22 @@ import {
 import { Input } from './ui/input';
 
 const FormSchema = z.object({
-  username: z.string().min(2, {
+  firstName: z.string().min(2, {
     message: 'Username must be at least 2 characters.',
   }),
+  lastName: z.string().min(2, {
+    message: 'Username must be at least 2 characters.',
+  }),
+  email: z.string().email({ message: 'Email is required' }),
 });
 
 export function ContactForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      username: '',
+      firstName: '',
+      lastName: '',
+      email: '',
     },
   });
 
@@ -48,12 +54,12 @@ export function ContactForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
         <FormField
           control={form.control}
-          name="username"
+          name="firstName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>First Name</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="First Name" {...field} />
               </FormControl>
               <FormDescription>
                 This is your public display name.
@@ -62,6 +68,41 @@ export function ContactForm() {
             </FormItem>
           )}
         />
+
+        <FormField
+          control={form.control}
+          name="lastName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>lastName</FormLabel>
+              <FormControl>
+                <Input placeholder="Last Name" {...field} />
+              </FormControl>
+              <FormDescription>
+                This is your public display name.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>email</FormLabel>
+              <FormControl>
+                <Input placeholder="email" {...field} />
+              </FormControl>
+              <FormDescription>
+                This is your public display name.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
         <Button type="submit">Submit</Button>
       </form>
     </Form>
