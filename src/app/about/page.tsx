@@ -6,7 +6,7 @@ const AboutPage = () => {
     <>
       <VideoPlayer src="/stock-images-videos/ethiopia_stock.mp4">
         <h2 className="text-3xl font-bold lg:text-6xl">Mission</h2>
-        <p className="w-full h-48 lg:text-2xl leading-snug lg:h-28">
+        <p className="w-full h-44 lg:text-2xl leading-snug lg:h-28">
           Help bridge the gap between a vision and a finished goal by providing
           products and services that deliver significant value, driving us to
           become one of the top 10 business organizations in Ethiopia by 2032.
