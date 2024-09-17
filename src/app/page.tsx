@@ -15,8 +15,9 @@ export default function Home() {
     <>
       <div className="relative w-full h-screen overflow-hidden">
         <div className="relative z-10 flex flex-col items-center justify-center h-full space-y-6">
-          <span className="font-bold text-4xl pt-5">Home</span>
-
+          <span className="font-bold text-4xl pt-5">
+            Abeba Giday Business Group
+          </span>
           <Carousel
             opts={{
               align: 'start',
@@ -52,7 +53,15 @@ export default function Home() {
               </CarouselItem>
             </CarouselContent>
           </Carousel>
-          <div className="border-dashed border border-zinc-500 w-full h-64 rounded-lg bg-white bg-opacity-10"></div>
+
+          <div className="grid grid-cols-1 grid-rows-6 gap-0 w-full h-full lg:grid-cols-3 lg:grid-rows-2">
+            <div className="bg-red-500"></div>
+            <div className="bg-blue-500">2</div>
+            <div className="bg-green-500">3</div>
+            <div className="bg-yellow-500">4</div>
+            <div className="bg-purple-500">5</div>
+            <div className="bg-pink-500">6</div>
+          </div>
         </div>
       </div>
     </>

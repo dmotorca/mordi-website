@@ -10,7 +10,6 @@ import { Button } from './ui/button';
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -61,9 +60,7 @@ export function ContactForm() {
               <FormControl>
                 <Input placeholder="First Name" {...field} />
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
+
               <FormMessage />
             </FormItem>
           )}
@@ -78,9 +75,6 @@ export function ContactForm() {
               <FormControl>
                 <Input placeholder="Last Name" {...field} />
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -95,9 +89,6 @@ export function ContactForm() {
               <FormControl>
                 <Input placeholder="email" {...field} />
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
