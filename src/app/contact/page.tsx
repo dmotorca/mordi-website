@@ -3,11 +3,9 @@ import { ContactForm } from '@/components/contact-form';
 
 const ContactPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="border border-gray-500 h-[50vh] w-[80vw] lg:h-[80vh] lg:w-[50vw]">
-        <div>
-          <ContactForm />
-        </div>
+    <div className="flex items-center justify-center pt-20">
+      <div className="border border-gray-500 h-[60vh] w-[80vw] lg:h-[80vh] lg:w-[40vw]">
+        <ContactForm />
       </div>
     </div>
   );

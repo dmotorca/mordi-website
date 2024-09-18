@@ -19,10 +19,10 @@ import { Input } from './ui/input';
 
 const FormSchema = z.object({
   firstName: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
+    message: 'First name is required.',
   }),
   lastName: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
+    message: 'Last name is required.',
   }),
   email: z.string().email({ message: 'Email is required' }),
 });
@@ -49,53 +49,78 @@ export function ContactForm() {
   }
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
-        <FormField
-          control={form.control}
-          name="firstName"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>First Name</FormLabel>
-              <FormControl>
-                <Input placeholder="First Name" {...field} />
-              </FormControl>
+    <div className="w-full h-full mx-auto bg-white shadow-md rounded-lg p-8">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+        Contact Us
+      </h2>
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          {/* First Name Field */}
+          <FormField
+            control={form.control}
+            name="firstName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-gray-700">First Name</FormLabel>
+                <FormControl>
+                  <Input
+                    className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    placeholder="First Name"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage className="text-red-500" />
+              </FormItem>
+            )}
+          />
 
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+          {/* Last Name Field */}
+          <FormField
+            control={form.control}
+            name="lastName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-gray-700">Last Name</FormLabel>
+                <FormControl>
+                  <Input
+                    className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    placeholder="Last Name"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage className="text-red-500" />
+              </FormItem>
+            )}
+          />
 
-        <FormField
-          control={form.control}
-          name="lastName"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>lastName</FormLabel>
-              <FormControl>
-                <Input placeholder="Last Name" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+          {/* Email Field */}
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-gray-700">Email</FormLabel>
+                <FormControl>
+                  <Input
+                    className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    placeholder="Email@email.com"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage className="text-red-500" />
+              </FormItem>
+            )}
+          />
 
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>email</FormLabel>
-              <FormControl>
-                <Input placeholder="email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <Button type="submit">Submit</Button>
-      </form>
-    </Form>
+          {/* Submit Button */}
+          <Button
+            type="submit"
+            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-500 transition-all"
+          >
+            Submit
+          </Button>
+        </form>
+      </Form>
+    </div>
   );
 }
