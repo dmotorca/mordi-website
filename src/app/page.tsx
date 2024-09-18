@@ -1,5 +1,7 @@
 'use client';
 
+import NewsForm from '@/components/news-form';
+
 import {
   Carousel,
   CarouselContent,
@@ -13,7 +15,7 @@ import Autoplay from 'embla-carousel-autoplay'; // Import the Autoplay plugin
 export default function Home() {
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full min-h-screen">
         <div className="relative z-10 flex flex-col items-center justify-center h-full space-y-6">
           <span className="font-bold text-4xl pt-5">
             Abeba Giday Business Group
@@ -54,13 +56,70 @@ export default function Home() {
             </CarouselContent>
           </Carousel>
 
-          <div className="grid grid-cols-1 grid-rows-6 gap-0 w-full h-full lg:grid-cols-3 lg:grid-rows-2">
-            <div className="bg-red-500"></div>
-            <div className="bg-blue-500">2</div>
-            <div className="bg-green-500">3</div>
-            <div className="bg-yellow-500">4</div>
-            <div className="bg-purple-500">5</div>
-            <div className="bg-pink-500">6</div>
+          <div className="grid grid-cols-1 grid-rows-6 gap-0 w-full auto-rows-min lg:grid-cols-3 lg:grid-rows-2">
+            <div className="">
+              <NewsForm
+                src="https://via.placeholder.com/800x400"
+                date="Semptember 17, 2024"
+                title="Exciting News: New Features Coming Soon!"
+                description="We are excited to announce that new features will soon be available to all users"
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
+            <div className="">
+              <NewsForm
+                src="https://via.placeholder.com/800x400"
+                date="Semptember 17, 2024"
+                title="Exciting News: New Features Coming Soon!"
+                description="We are excited to announce that new features will soon be available to all users"
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
+            <div className="">
+              <NewsForm
+                src="https://via.placeholder.com/800x400"
+                date="Semptember 17, 2024"
+                title="Exciting News: New Features Coming Soon!"
+                description="We are excited to announce that new features will soon be available to all users"
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
+
+            <div className="">
+              <NewsForm
+                src="https://via.placeholder.com/800x400"
+                date="Semptember 17, 2024"
+                title="Exciting News: New Features Coming Soon!"
+                description="We are excited to announce that new features will soon be available to all users"
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
+
+            <div className="">
+              <NewsForm
+                src="https://via.placeholder.com/800x400"
+                date="Semptember 17, 2024"
+                title="Exciting News: New Features Coming Soon!"
+                description="We are excited to announce that new features will soon be available to all users"
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
+
+            <div className="">
+              <NewsForm
+                src="https://via.placeholder.com/800x400"
+                date="Semptember 17, 2024"
+                title="Exciting News: New Features Coming Soon!"
+                description="We are excited to announce that new features will soon be available to all users"
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
           </div>
         </div>
       </div>
