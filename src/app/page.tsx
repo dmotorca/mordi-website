@@ -56,44 +56,36 @@ export default function Home() {
             </CarouselContent>
           </Carousel>
 
+          <div className=" text-6xl underline font-bold text-green-800">
+            News
+          </div>
           <div className="grid grid-cols-1 grid-rows-6 gap-0 w-full auto-rows-min lg:grid-cols-3 lg:grid-rows-2">
             <div className="">
               <NewsForm
-                src="https://via.placeholder.com/800x400"
+                src="/stock-images-videos/1.png"
                 date="Semptember 17, 2024"
-                title="Exciting News: New Features Coming Soon!"
-                description="We are excited to announce that new features will soon be available to all users"
+                title="ERP & Structure Bid"
+                description="Our Business Group annances a bid for ERP & Organizational Structure for both bids here attached need of our company... "
                 buttonHref="/"
                 buttonText="Read More"
               ></NewsForm>
             </div>
             <div className="">
               <NewsForm
-                src="https://via.placeholder.com/800x400"
+                src="/stock-images-videos/2.png"
                 date="Semptember 17, 2024"
-                title="Exciting News: New Features Coming Soon!"
-                description="We are excited to announce that new features will soon be available to all users"
+                title="Bid Invitation"
+                description="Abeba Giday Business Group is ready to implement the 5 year strategic plan to expand and competitive its business in... "
                 buttonHref="/"
                 buttonText="Read More"
               ></NewsForm>
             </div>
             <div className="">
               <NewsForm
-                src="https://via.placeholder.com/800x400"
+                src="/stock-images-videos/3.png"
                 date="Semptember 17, 2024"
-                title="Exciting News: New Features Coming Soon!"
-                description="We are excited to announce that new features will soon be available to all users"
-                buttonHref="/"
-                buttonText="Read More"
-              ></NewsForm>
-            </div>
-
-            <div className="">
-              <NewsForm
-                src="https://via.placeholder.com/800x400"
-                date="Semptember 17, 2024"
-                title="Exciting News: New Features Coming Soon!"
-                description="We are excited to announce that new features will soon be available to all users"
+                title="Training on Strategic Planning"
+                description="Regarding the completion of the company's 5-year strategic plan, two rounds of strategic plan training were given to employees at... "
                 buttonHref="/"
                 buttonText="Read More"
               ></NewsForm>
@@ -101,10 +93,10 @@ export default function Home() {
 
             <div className="">
               <NewsForm
-                src="https://via.placeholder.com/800x400"
+                src="/stock-images-videos/4.png"
                 date="Semptember 17, 2024"
-                title="Exciting News: New Features Coming Soon!"
-                description="We are excited to announce that new features will soon be available to all users"
+                title="Steel Production Begins"
+                description="Our Business Group steel factory began production of steel, after raw material coil arrives. As the expert for the factory... "
                 buttonHref="/"
                 buttonText="Read More"
               ></NewsForm>
@@ -112,10 +104,21 @@ export default function Home() {
 
             <div className="">
               <NewsForm
-                src="https://via.placeholder.com/800x400"
+                src="/stock-images-videos/5.png"
+                date="Semptember 17, 2024"
+                title="Coil Has Arrived"
+                description="Our steel factory raw material for steel has arrived here in our company. Our steel factory is now ready to..."
+                buttonHref="/"
+                buttonText="Read More"
+              ></NewsForm>
+            </div>
+
+            <div className="">
+              <NewsForm
+                src="/stock-images-videos/6.png"
                 date="Semptember 17, 2024"
                 title="Exciting News: New Features Coming Soon!"
-                description="We are excited to announce that new features will soon be available to all users"
+                description="Various models of tires that we imported from Djibouti have arrived. The tires are Westlake and range in size from... "
                 buttonHref="/"
                 buttonText="Read More"
               ></NewsForm>
