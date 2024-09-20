@@ -56,8 +56,8 @@ export default function Home() {
             </CarouselContent>
           </Carousel>
 
-          <div className=" text-6xl underline font-bold text-green-800">
-            News
+          <div className="text-6xl  lg:text-8xl underline font-bold text-green-800 lg:p-10">
+            <h2>NEWS</h2>
           </div>
           <div className="grid grid-cols-1 grid-rows-6 gap-0 w-full auto-rows-min lg:grid-cols-3 lg:grid-rows-2">
             <div className="">
