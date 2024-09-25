@@ -3,68 +3,104 @@ import React from 'react';
 const AbebaTradingPage = () => {
   return (
     <>
-      <div className="w-[80%]">
-        <p className="text-2xl pl-2 pb-5">
-          Abeba Giday Trading House PLC is an indigenous company dedicated to
-          importing and distributing tires, trucks, spare parts, and automobile
-          batteries. In addition to assembling automobiles, the company is also
-          involved in the manufacturing of corrugated products, positioning
-          itself as a versatile and integral player in Ethiopia&rsquo;s
-          automotive and manufacturing sectors.
+      {/* Intro Paragraph */}
+      <div className="w-[80%] mx-auto mt-8">
+        <p className="text-2xl text-gray-700 leading-relaxed pb-5">
+          <strong className="text-3xl">Abeba Giday Trading House PLC </strong>is
+          an indigenous company dedicated to importing and distributing tires,
+          trucks, spare parts, and automobile batteries. In addition to
+          assembling automobiles, the company is also involved in the
+          manufacturing of corrugated products, positioning itself as a
+          versatile and integral player in Ethiopia’s automotive and
+          manufacturing sectors.
         </p>
       </div>
-      <h2 className=" font-semibold text-4xl pl-2 pb-5">
+
+      {/* Section Heading */}
+      <h2 className="font-semibold text-4xl text-green-800 pl-2 pb-5 w-[80%] mx-auto border-b-2 border-green-800 mb-8">
         About Abeba Giday Trading House PLC
       </h2>
-      <p className="text-2xl pl-2 pb-5">
-        Founded in 1993, Abeba Giday Trading House PLC is a proudly indigenous
-        company dedicated to driving progress in Ethiopia&rsquo;s import and
-        distribution sectors. Our expertise spans a wide range of industries,
-        making us a trusted name in the market. **What We Do** At Abeba Giday
-        Trading House PLC, we are committed to excellence in importation and
-        distribution. Our product portfolio includes: -
-        <p>**Tyres** for various vehicles -</p>
-        <p>**Trucks and Dump Trucks** for heavy-duty transport needs -</p>
-        <p>**Automobiles** and</p>
-        <p>**Motorcycles** -</p>
-        <p>**Spare Parts** for trucks and automobiles -</p>
-        <p>**Automobile Batteries** -</p>
-        <p>**Agricultural Equipment** for farming solutions -</p>
-        <p>**Iron Sheets and Steel** for construction -</p>
-        <p>**Corrugated Sheets** for building materials -</p>
-        <p>
-          **Agrochemicals** for agricultural productivity We take pride in
-          providing top-quality products that meet the diverse needs of our
-          clients, reinforcing our position as a leader in Ethiopia&rsquo;s
-          commercial landscape.
+
+      {/* Company Overview */}
+      <div className="w-[80%] mx-auto mb-12">
+        <p className="text-2xl text-gray-700 leading-relaxed pb-5">
+          Founded in 1993, Abeba Giday Trading House PLC is a proudly indigenous
+          company dedicated to driving progress in Ethiopia’s import and
+          distribution sectors. Our expertise spans a wide range of industries,
+          making us a trusted name in the market.
+          <br></br>
+          <strong>What We Do</strong>
         </p>
-      </p>
-      Video https://www.youtube.com/watch?v=IRtmozSyfjk
-      <div className="grid mx-auto relative min-h-screen w-[80%] gap-10 lg:grid-rows-2 lg:grid-cols-3">
-        <div>
-          <img src="/stock-images-videos/1.png"></img>
-          <div className="text-4xl text-green-800">Tyre</div>
+        <ul className="list-disc pl-6 text-2xl text-gray-700 leading-relaxed space-y-3">
+          <li>
+            <strong>Tyres</strong> for various vehicles
+          </li>
+          <li>
+            <strong>Trucks and Dump Trucks</strong> for heavy-duty transport
+            needs
+          </li>
+          <li>
+            <strong>Automobiles</strong> and <strong>Motorcycles</strong>
+          </li>
+          <li>
+            <strong>Spare Parts</strong> for trucks and automobiles
+          </li>
+          <li>
+            <strong>Automobile Batteries</strong>
+          </li>
+          <li>
+            <strong>Agricultural Equipment</strong> for farming solutions
+          </li>
+          <li>
+            <strong>Iron Sheets and Steel</strong> for construction
+          </li>
+          <li>
+            <strong>Corrugated Sheets</strong> for building materials
+          </li>
+          <li>
+            <strong>Agrochemicals</strong> for agricultural productivity
+          </li>
+        </ul>
+      </div>
+
+      {/* Video Section */}
+      <div className="w-[80%] mx-auto mb-12">
+        <h3 className="text-2xl font-semibold text-green-800 mb-4">
+          Watch our introduction video:
+        </h3>
+
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            width="100%"
+            height="720"
+            src="https://www.youtube.com/embed/WpW5g0n7qy4"
+            title="The Ethiopian Food Truck"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
         </div>
-        <div>
-          <img src="/stock-images-videos/2.png"></img>
-          <div className="text-4xl text-green-800">Dumptruck</div>
-        </div>
-        <div>
-          <img src="/stock-images-videos/3.png"></img>
-          <div className="text-4xl text-green-800">Motorcycle</div>
-        </div>
-        <div>
-          <img src="/stock-images-videos/4.png"></img>
-          <div className="text-4xl text-green-800">Spare Parts</div>
-        </div>
-        <div>
-          <img src="/stock-images-videos/5.png"></img>
-          <div className="text-4xl text-green-800">Automobile</div>
-        </div>
-        <div>
-          <img src="/stock-images-videos/6.png"></img>
-          <div className="text-4xl text-green-800">Truck</div>
-        </div>
+      </div>
+
+      {/* Product Grid */}
+      <div className="grid mx-auto w-[80%] gap-10 lg:grid-rows-2 lg:grid-cols-3">
+        {[
+          { src: '/stock-images-videos/1.png', label: 'Tyre' },
+          { src: '/stock-images-videos/2.png', label: 'Dumptruck' },
+          { src: '/stock-images-videos/3.png', label: 'Motorcycle' },
+          { src: '/stock-images-videos/4.png', label: 'Spare Parts' },
+          { src: '/stock-images-videos/5.png', label: 'Automobile' },
+          { src: '/stock-images-videos/6.png', label: 'Truck' },
+        ].map((item, idx) => (
+          <div key={idx} className="text-center">
+            <img
+              src={item.src}
+              alt={item.label}
+              className="rounded-lg shadow-lg mb-4"
+            />
+            <div className="text-4xl font-semibold text-green-800">
+              {item.label}
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
